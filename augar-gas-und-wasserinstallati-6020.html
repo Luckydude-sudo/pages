@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augar Gas- und Wasserinstallationen GmbH | Berliner Handwerk seit 1885</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        berlinBlue: '#004B87',
+                        heritageCopper: '#B87333',
+                        neutralGray: '#F9F9F9',
+                        deepAccent: '#2D2D2D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    borderRadius: {
+                        'custom': '8px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 75, 135, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 75, 135, 0.8), rgba(0, 75, 135, 0.6)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .copper-border {
+            border-left: 4px solid #B87333;
+        }
+        .masonry {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-neutralGray text-deepAccent font-sans">
+
+    <!-- Header & Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-berlinBlue font-heading text-2xl tracking-tighter">
+                        AUGAR<span class="text-heritageCopper">.</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#angebote" class="text-sm font-medium hover:text-berlinBlue transition">Leistungen</a>
+                    <a href="#historie" class="text-sm font-medium hover:text-berlinBlue transition">Tradition</a>
+                    <a href="#projekte" class="text-sm font-medium hover:text-berlinBlue transition">Referenzen</a>
+                    <a href="tel:+49308928217" class="bg-berlinBlue text-white px-5 py-2.5 rounded-custom text-sm font-bold flex items-center gap-2 hover:bg-opacity-90 transition shadow-lg">
+                        <i class="fas fa-phone-alt"></i> +49 30 892 82 17
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-berlinBlue p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-xl">
+            <a href="#angebote" class="block text-lg font-medium">Leistungen</a>
+            <a href="#historie" class="block text-lg font-medium">Tradition</a>
+            <a href="#projekte" class="block text-lg font-medium">Referenzen</a>
+            <a href="tel:+49308928217" class="block bg-berlinBlue text-white text-center py-3 rounded-custom font-bold">Notruf: +49 30 892 82 17</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center hero-gradient pt-20">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="inline-block px-4 py-1 border border-heritageCopper text-heritageCopper font-medium text-sm mb-6 tracking-widest uppercase bg-white/10 backdrop-blur-sm rounded-full">
+                Seit 1885 in Berlin-Halensee
+            </div>
+            <h1 class="font-heading text-4xl md:text-7xl text-white mb-6 leading-tight">
+                Augar: 140 Jahre <br><span class="text-heritageCopper italic font-serif">Berliner Handwerk.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Ihr Familienbetrieb in 5. Generation für Gas, Wasser und exklusive Badsanierungen. Zuverlässigkeit, die über Jahrhunderte besteht.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kontakt" class="bg-heritageCopper text-white px-8 py-4 rounded-custom font-bold text-lg hover:scale-105 transition shadow-2xl">Angebot anfragen</a>
+                <a href="#angebote" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-custom font-bold text-lg hover:bg-white/20 transition">Unsere Leistungen</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50 text-2xl">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Trust & Certification Bar -->
+    <section class="bg-white border-b border-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition duration-500">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-certificate text-berlinBlue text-3xl"></i>
+                <span class="font-bold text-sm">GASAG Zertifiziert</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fas fa-faucet text-berlinBlue text-3xl"></i>
+                <span class="font-bold text-sm">Berliner Wasserbetriebe</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fas fa-medal text-heritageCopper text-3xl"></i>
+                <span class="font-bold text-sm">Meisterbetrieb seit 1885</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fas fa-shield-halved text-berlinBlue text-3xl"></i>
+                <span class="font-bold text-sm">Innung Sanitär Heizung Klempner</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Portfolio -->
+    <section id="angebote" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="font-heading text-3xl md:text-5xl mb-4">Meisterhafte Leistungen</h2>
+            <div class="w-20 h-1 bg-heritageCopper mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">Vom tropfenden Wasserhahn bis zur Kernsanierung ganzer Wohnobjekte – wir vereinen Tradition mit modernster Technik.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                <div class="w-14 h-14 bg-berlinBlue/10 text-berlinBlue flex items-center justify-center rounded-lg mb-6 group-hover:bg-berlinBlue group-hover:text-white transition-colors">
+                    <i class="fas fa-bath text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-xl mb-4">Sanitär & Bäder</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Barrierefreie & altengerechte Bäder</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Komplette Badausstattung</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Rohrbruchbeseitigung</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Inkl. Fliesenlegerkoordination</li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                <div class="w-14 h-14 bg-berlinBlue/10 text-berlinBlue flex items-center justify-center rounded-lg mb-6 group-hover:bg-berlinBlue group-hover:text-white transition-colors">
+                    <i class="fas fa-fire text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-xl mb-4">Heizungstechnik</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Gas- & Gasetagenheizungen</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Wartung von Thermen & Speichern</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Elektrische Durchlauferhitzer</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Zentralheizungsanlagen</li>
+                </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                <div class="w-14 h-14 bg-berlinBlue/10 text-berlinBlue flex items-center justify-center rounded-lg mb-6 group-hover:bg-berlinBlue group-hover:text-white transition-colors">
+                    <i class="fas fa-hammer text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-xl mb-4">Demontage & Entkernung</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Entfernen nichttragender Wände</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Komplettdemontage Bad/Küche</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Fachgerechte Bauschuttentsorgung</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Gebäudeschutzmaßnahmen</li>
+                </ul>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                <div class="w-14 h-14 bg-berlinBlue/10 text-berlinBlue flex items-center justify-center rounded-lg mb-6 group-hover:bg-berlinBlue group-hover:text-white transition-colors">
+                    <i class="fas fa-tools text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-xl mb-4">Bauklemptnerei</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Arbeiten mit Zink & Kupfer</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Dachrinnenreinigung & Reparatur</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Fensterbleche & Balkonentwässerung</li>
+                </ul>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                <div class="w-14 h-14 bg-berlinBlue/10 text-berlinBlue flex items-center justify-center rounded-lg mb-6 group-hover:bg-berlinBlue group-hover:text-white transition-colors">
+                    <i class="fas fa-tachometer-alt text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-xl mb-4">Zähler & Messdienst</h3>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Kalt- & Warmwasserzähler</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Gaszähler An- & Abmeldung</li>
+                    <li><i class="fas fa-check text-heritageCopper mr-2"></i>Dichtigkeitsprüfungen</li>
+                </ul>
+            </div>
+            
+            <!-- Lead Link -->
+            <div class="bg-berlinBlue p-8 rounded-custom shadow-sm flex flex-col justify-center items-center text-center text-white">
+                <h3 class="font-heading text-xl mb-4">Nicht das Richtige dabei?</h3>
+                <p class="text-white/80 mb-6 text-sm">Rufen Sie uns direkt an. Als Berliner Urgestein finden wir für jedes Problem eine Lösung.</p>
+                <a href="tel:+49308928217" class="underline font-bold text-lg decoration-heritageCopper underline-offset-8">Direktkontakt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Story -->
+    <section id="historie" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h4 class="text-heritageCopper font-bold tracking-widest uppercase text-sm mb-4 italic">Fünf Generationen Kontinuität</h4>
+                    <h2 class="font-heading text-4xl md:text-5xl mb-8 leading-tight">Vom Klempnermeister zum modernen Sanitärexperten</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Gegründet 1885 durch <strong>Gustav Augar</strong>, schlägt das Herz unseres Unternehmens seit über einem Jahrhundert in Berlin. Was in der Kaiserzeit begann, führen wir heute als zertifizierter Meisterbetrieb fort.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="copper-border pl-6 py-2">
+                            <p class="font-serif italic text-lg text-berlinBlue">"Qualität ist kein Zufall, sie ist das Ergebnis von 140 Jahren Familienehre."</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 text-sm font-medium">
+                            <div class="p-4 bg-neutralGray rounded">1885: Gustav Augar</div>
+                            <div class="p-4 bg-neutralGray rounded">1919: Herbert Augar</div>
+                            <div class="p-4 bg-neutralGray rounded">1987: Meisterprüfung Ulrich</div>
+                            <div class="p-4 bg-neutralGray rounded">2010: Gründung GmbH</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/1885_Gustav-Augar_1903_Eintrag_H-300x169.jpg" alt="Historische Urkunde" class="w-full rounded-custom shadow-2xl relative z-10 sepia-[.3]">
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-berlinBlue rounded-full flex items-center justify-center text-white font-heading z-20 text-center leading-tight shadow-xl">
+                        Seit<br>1885
+                    </div>
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Geschichte_009-980x1470.jpg" alt="Ulrich Augar" class="absolute -bottom-12 -left-12 w-48 h-64 object-cover rounded-custom border-4 border-white shadow-2xl z-20">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section id="projekte" class="py-24 bg-neutralGray">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-5xl mb-4">Referenzprojekte</h2>
+                    <p class="text-gray-600">Qualität, die man sehen kann. In ganz Berlin.</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex gap-2">
+                    <span class="px-3 py-1 bg-white text-xs font-bold rounded border border-gray-200 uppercase tracking-tighter">Dach</span>
+                    <span class="px-3 py-1 bg-white text-xs font-bold rounded border border-gray-200 uppercase tracking-tighter">Sanitär</span>
+                    <span class="px-3 py-1 bg-white text-xs font-bold rounded border border-gray-200 uppercase tracking-tighter">Heizung</span>
+                </div>
+            </div>
+            
+            <div class="masonry">
+                <div class="masonry-item">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Sanitär_001-683x1024.jpg" class="rounded-custom shadow-md hover:scale-[1.02] transition duration-300" alt="Badsanierung">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Dacharbeiten_001-300x200.jpg" class="w-full rounded-custom shadow-md hover:scale-[1.02] transition duration-300" alt="Dacharbeiten">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Heizung_001-300x200.jpg" class="w-full rounded-custom shadow-md hover:scale-[1.02] transition duration-300" alt="Heizungswartung">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Sanitär_003-1024x683.jpg" class="w-full rounded-custom shadow-md hover:scale-[1.02] transition duration-300" alt="Moderner Waschtisch">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Wasserzähler_001-1024x683.jpg" class="w-full rounded-custom shadow-md hover:scale-[1.02] transition duration-300" alt="Wasserzähler">
+                </div>
+                <div class="masonry-item">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Demontagen_001-200x300.jpg" class="w-full rounded-custom shadow-md hover:scale-[1.02] transition duration-300" alt="Demontage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team & Philosophy -->
+    <section class="py-24 bg-berlinBlue text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white/5 p-12 rounded-custom border border-white/10 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Geschichte_009-980x1470.jpg" alt="Ulrich Augar" class="w-full rounded-custom grayscale hover:grayscale-0 transition duration-500 shadow-2xl">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="font-heading text-3xl mb-4">Ulrich Augar</h3>
+                    <p class="text-heritageCopper font-bold mb-6">Meisterprüfung 1987 | Gründer & Geschäftsführer</p>
+                    <p class="text-white/80 text-lg leading-relaxed mb-8">
+                        "Als Berliner Meisterbetrieb stehen wir für Transparenz und technische Perfektion. Unser Team aus zertifizierten Fachkräften sorgt dafür, dass Ihre Immobilienwerte erhalten bleiben – egal ob im privaten Wohnungsbau oder im gewerblichen Bereich."
+                    </p>
+                    <div class="flex flex-wrap gap-8">
+                        <div>
+                            <div class="text-2xl font-bold">140</div>
+                            <div class="text-sm text-white/50">Jahre Erfahrung</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">100%</div>
+                            <div class="text-sm text-white/50">Berliner Urgestein</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">2010</div>
+                            <div class="text-sm text-white/50">GmbH Gründung</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion Section -->
+    <section id="kontakt" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="font-heading text-4xl mb-8">Starten wir Ihr Projekt</h2>
+                    <p class="text-gray-600 mb-10">Ob Notfallreparatur oder langfristige Planung – nutzen Sie unser Kontaktformular oder rufen Sie uns direkt an.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-neutralGray rounded flex items-center justify-center text-berlinBlue shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Standort</h4>
+                                <p class="text-gray-600">Johann-Sigismund-Straße 14<br>10711 Berlin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-neutralGray rounded flex items-center justify-center text-berlinBlue shrink-0">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Telefon & Fax</h4>
+                                <p class="text-gray-600">Tel: 030 / 892 82 17<br>Fax: 030 / 893 22 18</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-neutralGray rounded flex items-center justify-center text-berlinBlue shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">E-Mail</h4>
+                                <a href="mailto:info@augar.de" class="text-heritageCopper hover:underline">info@augar.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutralGray p-8 rounded-custom shadow-inner">
+                    <form action="#" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Name" class="w-full p-4 rounded-custom border border-gray-200 focus:outline-none focus:ring-2 focus:ring-berlinBlue">
+                            <input type="email" placeholder="E-Mail Adresse" class="w-full p-4 rounded-custom border border-gray-200 focus:outline-none focus:ring-2 focus:ring-berlinBlue">
+                        </div>
+                        <select class="w-full p-4 rounded-custom border border-gray-200 focus:outline-none focus:ring-2 focus:ring-berlinBlue bg-white">
+                            <option>Grund der Anfrage</option>
+                            <option>Badsanierung</option>
+                            <option>Heizung / Wartung</option>
+                            <option>Notfall / Reparatur</option>
+                            <option>Bauklemptnerei</option>
+                        </select>
+                        <textarea rows="4" placeholder="Ihre Nachricht..." class="w-full p-4 rounded-custom border border-gray-200 focus:outline-none focus:ring-2 focus:ring-berlinBlue"></textarea>
+                        <button class="w-full bg-berlinBlue text-white font-bold py-4 rounded-custom hover:bg-opacity-90 transition">Jetzt unverbindlich anfragen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deepAccent text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <div class="text-white font-heading text-2xl tracking-tighter mb-6">
+                        AUGAR<span class="text-heritageCopper">.</span>
+                    </div>
+                    <p class="text-white/50 text-sm max-w-xs">
+                        Traditioneller Meisterbetrieb für Berlin. Seit fünf Generationen im Dienste unserer Kunden.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-sm uppercase tracking-widest mb-6">Navigation</h4>
+                    <ul class="space-y-3 text-white/60 text-sm">
+                        <li><a href="#angebote" class="hover:text-heritageCopper transition">Leistungen</a></li>
+                        <li><a href="#historie" class="hover:text-heritageCopper transition">Geschichte</a></li>
+                        <li><a href="#projekte" class="hover:text-heritageCopper transition">Referenzen</a></li>
+                        <li><a href="#kontakt" class="hover:text-heritageCopper transition">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-sm uppercase tracking-widest mb-6">Rechtliches</h4>
+                    <ul class="space-y-3 text-white/60 text-sm">
+                        <li><a href="#" class="hover:text-heritageCopper transition">Impressum</a></li>
+                        <li><a href="#" class="hover:text-heritageCopper transition">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-heritageCopper transition">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>&copy; 2010-2026 Augar Gas- und Wasserinstallationen GmbH. Alle Rechte vorbehalten.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-facebook text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
