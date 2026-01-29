@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWH Rohrtechnik GmbH - Heizung, Lüftung, Klimatechnik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#004A99',
+                        secondary: '#E30613',
+                        accent: '#F2F2F2',
+                        dark: '#1A1A1A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'custom': '4px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-dark font-sans leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 w-full z-50 glass shadow-sm border-b border-gray-100">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-primary p-2 rounded-custom">
+                    <i data-lucide="droplets" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="font-heading text-xl tracking-tighter text-primary uppercase">GWH <span class="text-dark">Rohrtechnik</span></span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#services" class="hover:text-primary transition-colors">Leistungen</a>
+                <a href="#sustainability" class="hover:text-primary transition-colors">Energie 2026</a>
+                <a href="#recruitment" class="hover:text-primary transition-colors">Karriere</a>
+                <a href="tel:+49000000000" class="flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-custom hover:bg-red-700 transition-all">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                    24/7 Notdienst
+                </a>
+            </div>
+
+            <button class="md:hidden text-primary">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40"></div>
+            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ec3?auto=format&fit=crop&q=80&w=2000" alt="Modern HVAC Installation" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-white">
+            <div class="max-w-3xl">
+                <h1 class="font-heading text-4xl md:text-6xl mb-6 leading-tight">Präzision in der Gebäudetechnik.</h1>
+                <p class="text-xl md:text-2xl mb-10 font-light opacity-90">Ihre Experten für Heizung, Lüftung und Klima. Wir gestalten die Energiewende für Wohn- und Gewerbeimmobilien.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-secondary hover:bg-red-700 text-white px-8 py-4 rounded-custom font-bold text-center transition-all shadow-lg uppercase tracking-wider">Angebot anfordern</a>
+                    <a href="#services" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-custom font-bold text-center transition-all uppercase tracking-wider">Unsere Leistungen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Grid -->
+    <section id="services" class="py-24 bg-accent">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl text-primary mb-4 uppercase">Unsere Kernkompetenzen</h2>
+                <div class="h-1 w-20 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Heating -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-md border-b-4 border-secondary">
+                    <i data-lucide="flame" class="text-secondary w-12 h-12 mb-6"></i>
+                    <h3 class="font-heading text-xl mb-4 text-primary">Heizungstechnik</h3>
+                    <p class="text-gray-600 mb-6">Von modernen Wärmepumpen bis hin zu wasserstoffbereiten Gassystemen. Wir sorgen für effiziente Wärme.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 italic">
+                        <li>+ Wärmepumpen-Installation</li>
+                        <li>+ Hybrid-Heizsysteme</li>
+                        <li>+ Fußbodenheizungen</li>
+                    </ul>
+                </div>
+
+                <!-- Ventilation -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-md border-b-4 border-primary">
+                    <i data-lucide="wind" class="text-primary w-12 h-12 mb-6"></i>
+                    <h3 class="font-heading text-xl mb-4 text-primary">Lüftung & Smart Air</h3>
+                    <p class="text-gray-600 mb-6">Intelligente Lüftungskonzepte für gesundes Raumklima und maximale Energieeinsparung durch Rückgewinnung.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 italic">
+                        <li>+ KWL Anlagen</li>
+                        <li>+ Filtertechnik</li>
+                        <li>+ CO2-Steuerung</li>
+                    </ul>
+                </div>
+
+                <!-- AC -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-md border-b-4 border-primary">
+                    <i data-lucide="thermometer-snowflake" class="text-primary w-12 h-12 mb-6"></i>
+                    <h3 class="font-heading text-xl mb-4 text-primary">Klimatechnik</h3>
+                    <p class="text-gray-600 mb-6">Präzisionskühlung für Serverräume, Bürogebäude und gehobenen Wohnkomfort mit höchster Effizienz.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 italic">
+                        <li>+ Split-Klimageräte</li>
+                        <li>+ VRV/VRF Systeme</li>
+                        <li>+ Wartungsservice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Focus -->
+    <section id="sustainability" class="py-24 bg-primary text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <h2 class="font-heading text-3xl md:text-4xl mb-6 uppercase tracking-tight">Zukunftssicher: <br><span class="text-secondary">Energie-Standards 2026</span></h2>
+                <p class="text-lg mb-8 opacity-90 leading-relaxed">
+                    Das neue Gebäudeenergiegesetz (GEG) setzt hohe Maßstäbe. Wir begleiten Sie beim Umstieg auf erneuerbare Energien und sichern Ihnen attraktive Fördermittel. GWH Rohrtechnik ist Ihr Partner für die Wärmewende.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="text-secondary"></i>
+                        <span>GEG Konformität</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="text-secondary"></i>
+                        <span>BAFA Beratung</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="text-secondary"></i>
+                        <span>Öko-Kältemittel</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="text-secondary"></i>
+                        <span>Smart Home Ready</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="bg-white/10 p-4 rounded-custom border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?auto=format&fit=crop&q=80&w=1000" alt="Heat Pump Installation" class="rounded-custom shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Trust -->
+    <section class="py-16 border-b border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+                <div class="flex items-center gap-2 font-heading font-bold text-xl">
+                    <i data-lucide="shield-check"></i> MEISTERBETRIEB
+                </div>
+                <div class="flex items-center gap-2 font-heading font-bold text-xl">
+                    <i data-lucide="award"></i> INNUNGSMITGLIED
+                </div>
+                <div class="flex items-center gap-2 font-heading font-bold text-xl uppercase">
+                    TÜV-Zertifiziert
+                </div>
+                <div class="bg-gray-200 px-4 py-2 rounded font-bold">5.0 ★ Google Review</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment Section -->
+    <section id="recruitment" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-accent rounded-custom overflow-hidden flex flex-col md:flex-row items-stretch">
+                <div class="md:w-1/2 p-12">
+                    <h2 class="font-heading text-3xl text-primary mb-6 uppercase">Werde Teil des Teams</h2>
+                    <p class="text-gray-600 mb-8">Wir suchen Anlagenmechaniker (m/w/d) für SHK. Arbeite mit modernster Technik in einem motivierten Team bei attraktiver Vergütung.</p>
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-center gap-4 text-sm">
+                            <i data-lucide="wallet" class="text-primary w-5 h-5"></i>
+                            Überdurchschnittliches Gehalt
+                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <i data-lucide="car" class="text-primary w-5 h-5"></i>
+                            Eigenes Service-Fahrzeug
+                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <i data-lucide="briefcase" class="text-primary w-5 h-5"></i>
+                            Modernste Werkzeuge
+                        </div>
+                    </div>
+                    <button class="bg-primary text-white px-8 py-3 rounded-custom font-bold hover:bg-blue-800 transition-all uppercase text-sm tracking-widest">Quick Apply via WhatsApp</button>
+                </div>
+                <div class="md:w-1/2 bg-gray-200 min-h-[300px]">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1000" alt="Team Work" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="bg-primary p-1 rounded-custom">
+                        <i data-lucide="droplets" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span class="font-heading text-lg tracking-tighter uppercase">GWH Rohrtechnik</span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    GWH Rohrtechnik GmbH<br>
+                    Meisterbetrieb für Heizung,<br>
+                    Lüftung & Klimatechnik.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="font-heading text-sm uppercase mb-6 text-primary">Leistungen</h4>
+                <ul class="text-gray-400 space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Heizung</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Klima & Kälte</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Lüftung</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Sanitär</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-heading text-sm uppercase mb-6 text-primary">Kontakt</h4>
+                <ul class="text-gray-400 space-y-3 text-sm">
+                    <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +49 (0) 000 00000</li>
+                    <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> info@gwh-rohrtechnik.de</li>
+                    <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Musterstraße 123, Deutschland</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-heading text-sm uppercase mb-6 text-primary">Notdienst</h4>
+                <div class="bg-secondary/10 border border-secondary p-4 rounded-custom">
+                    <p class="text-xs uppercase mb-2 text-secondary font-bold">Rund um die Uhr</p>
+                    <p class="text-lg font-bold">0800 123 456 78</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 border-t border-gray-800 pt-8 flex flex-col md:row items-center justify-between gap-4 text-xs text-gray-500">
+            <p>&copy; 2024 GWH Rohrtechnik GmbH. Alle Rechte vorbehalten.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Impressum</a>
+                <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle logic
+        const menuBtn = document.querySelector('button.md\\:hidden');
+        const navLinks = document.querySelector('div.hidden.md\\:flex');
+        
+        menuBtn.addEventListener('click', () => {
+            // Simple toggle for demo
+            alert('Mobile Navigation Menu Open');
+        });
+    </script>
+</body>
+</html>
