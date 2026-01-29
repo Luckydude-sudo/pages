@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augar Gas- und Wasserinstallationen GmbH | Master Craftsmanship since 1885</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A2E35',
+                        accent: '#B87333',
+                        neutralBg: '#F8F9FA',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(26, 46, 53, 0.85), rgba(26, 46, 53, 0.85)), url('https://augar.de/wp-content/uploads/2020/06/bathroom-1851566_1920-1080.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #B87333;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="font-sans text-primary bg-neutralBg">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-primary/95 text-white border-b border-accent/20 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="font-serif text-2xl tracking-tighter leading-none">AUGAR</span>
+                <span class="text-[10px] uppercase tracking-[0.2em] text-accent">Seit 1885 · Berlin</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#leistungen" class="hover:text-accent transition">Leistungen</a>
+                <a href="#historie" class="hover:text-accent transition">Historie</a>
+                <a href="#projekte" class="hover:text-accent transition">Projekte</a>
+                <a href="#kontakt" class="hover:text-accent transition">Kontakt</a>
+            </div>
+            <a href="tel:+49308928217" class="bg-accent hover:bg-white hover:text-primary px-5 py-2 text-sm font-bold transition duration-300">
+                030 / 892 82 17
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center hero-gradient text-white pt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-block border border-accent px-4 py-1 mb-6 text-accent text-sm uppercase tracking-widest">
+                140 Years of Master Craftsmanship in Berlin
+            </div>
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 leading-tight">
+                Augar Gas- & Wasserinstallationen GmbH
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto text-gray-300">
+                A family legacy since 1885. Preserving the heritage of Berlin's historic architecture with modern technical excellence.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="tel:+49308928217" class="bg-accent text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-xl">
+                    Request Emergency Service
+                </a>
+                <a href="#projekte" class="border border-white/30 backdrop-blur-md px-8 py-4 text-lg font-semibold hover:bg-white hover:text-primary transition-all">
+                    Browse Our Project History
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Heritage & Social Proof -->
+    <section id="historie" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
+                <div>
+                    <h2 class="font-serif text-4xl mb-6">4 Generations of Master Plumbers</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        From Gustav Augar in 1885 to Ulrich Augar today, our name has been synonymous with reliability in Berlin-Halensee for over a century. We are honored to celebrate our 140-year anniversary in 2025/2026.
+                    </p>
+                    <div class="flex space-x-8 opacity-80 grayscale">
+                        <img src="https://augar.de/wp-content/uploads/2020/09/2020_Ehrenurkunde_135-Jahre-300x169.jpg" alt="Certification" class="h-16 object-contain">
+                    </div>
+                </div>
+                <div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center p-6 border-l border-accent/20">
+                        <div class="text-accent font-serif text-4xl mb-2 italic">1885</div>
+                        <div class="text-xs uppercase tracking-tighter">Founded by Gustav</div>
+                    </div>
+                    <div class="text-center p-6 border-l border-accent/20">
+                        <div class="text-accent font-serif text-4xl mb-2 italic">1903</div>
+                        <div class="text-xs uppercase tracking-tighter">Current Location</div>
+                    </div>
+                    <div class="text-center p-6 border-l border-accent/20">
+                        <div class="text-accent font-serif text-4xl mb-2 italic">1987</div>
+                        <div class="text-xs uppercase tracking-tighter">Ulrich's Mastership</div>
+                    </div>
+                    <div class="text-center p-6 border-l border-accent/20">
+                        <div class="text-accent font-serif text-4xl mb-2 italic">2026</div>
+                        <div class="text-xs uppercase tracking-tighter">140 Year Jubilee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Service Pillars -->
+    <section id="leistungen" class="py-24 bg-neutralBg">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="font-serif text-4xl mb-4">Core Service Pillars</h2>
+            <div class="w-24 h-1 bg-accent mx-auto"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pillar 1 -->
+            <div class="bg-white p-8 border-b-4 border-primary hover:border-accent transition group shadow-sm">
+                <div class="text-accent mb-6">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.628.283a2 2 0 01-1.186.127l-2.214-.45a2 2 0 01-1.022-.547V4.16a2 2 0 011.022-.547l2.214-.45a2 2 0 011.186.127l.628.283a6 6 0 003.86.517l2.387-.477a2 2 0 011.022.547V15.428z"></path></svg>
+                </div>
+                <h3 class="font-serif text-2xl mb-4">Smart Sanitary</h3>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                    <li>· Premium Bathroom Planning</li>
+                    <li>· Barrier-free & Age-appropriate Solutions</li>
+                    <li>· Rapid Leak Detection & Repairs</li>
+                    <li>· Complete Pipe Modernization</li>
+                </ul>
+            </div>
+            <!-- Pillar 2 -->
+            <div class="bg-white p-8 border-b-4 border-primary hover:border-accent transition group shadow-sm">
+                <div class="text-accent mb-6">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="font-serif text-2xl mb-4">Modern Heating</h3>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                    <li>· High-Efficiency Gas Systems</li>
+                    <li>· Heat Pump Focus (2026 Ready)</li>
+                    <li>· Thermal & Storage Maintenance</li>
+                    <li>· Electrical Instant Water Heaters</li>
+                </ul>
+            </div>
+            <!-- Pillar 3 -->
+            <div class="bg-white p-8 border-b-4 border-primary hover:border-accent transition group shadow-sm">
+                <div class="text-accent mb-6">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <h3 class="font-serif text-2xl mb-4">Demolition & Metering</h3>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                    <li>· Professional Apartment Gutting</li>
+                    <li>· Non-bearing Wall Removal</li>
+                    <li>· Official Gasag Meter Installation</li>
+                    <li>· Water Meter Testing & Certification</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Master's Perspective -->
+    <section class="py-24 bg-primary text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative">
+                    <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Geschichte_009.jpg" alt="Ulrich Augar" class="w-full grayscale hover:grayscale-0 transition duration-700 shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-accent p-8 hidden md:block">
+                        <span class="block text-4xl font-serif">1987</span>
+                        <span class="text-xs uppercase tracking-widest">Master Certification</span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-serif text-4xl mb-6 italic">"Quality over quantity has been our guiding principle for 140 years."</h2>
+                    <h4 class="text-accent text-xl font-bold mb-4">Ulrich Augar, Master Plumber</h4>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Sustainability meets traditional craftsmanship. Since taking the lead, my focus has been on bridging the gap between Berlin's architectural heritage and the future of energy. As we move toward 2026, our emphasis on heat pumps and modern sanitary planning reflects our commitment to the next generation of Berlin homeowners.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 text-sm font-medium">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-accent"></span>
+                            <span>Gasag Certified</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-accent"></span>
+                            <span>Wasserbetriebe Partner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Portfolio -->
+    <section id="projekte" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <h2 class="font-serif text-4xl mb-2">Our Portfolio</h2>
+                <p class="text-gray-500">Showcasing technical capability and aesthetic quality across Berlin.</p>
+            </div>
+            <div class="flex flex-wrap gap-4 text-xs uppercase tracking-widest font-bold">
+                <span class="px-4 py-2 bg-primary text-white cursor-pointer">All Projects</span>
+                <span class="px-4 py-2 border border-gray-200 hover:border-accent cursor-pointer transition">Sanitär</span>
+                <span class="px-4 py-2 border border-gray-200 hover:border-accent cursor-pointer transition">Heizung</span>
+                <span class="px-4 py-2 border border-gray-200 hover:border-accent cursor-pointer transition">Dacharbeiten</span>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="md:col-span-2 overflow-hidden group h-64">
+                <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Sanitär_001.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Plumbing">
+            </div>
+            <div class="overflow-hidden group h-64">
+                <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Dacharbeiten_001.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Roofing">
+            </div>
+            <div class="overflow-hidden group h-64">
+                <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Heizung_001.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Heating">
+            </div>
+            <div class="overflow-hidden group h-64">
+                <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Demontagen_005.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Demolition">
+            </div>
+            <div class="md:col-span-2 overflow-hidden group h-64">
+                <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Wasserzähler_001.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Metering">
+            </div>
+            <div class="overflow-hidden group h-64">
+                <img src="https://augar.de/wp-content/uploads/2020/06/Augar_Sanitär_003.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Luxury Bathroom">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="kontakt" class="py-24 bg-neutralBg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-white shadow-2xl flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-12 md:p-16">
+                    <h2 class="font-serif text-4xl mb-8">Get in Touch</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="text-accent mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Our Workshop</h4>
+                                <p class="text-gray-600">Johann-Sigismund-Straße 14<br>10711 Berlin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-6">
+                            <div class="text-accent mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Direct Line</h4>
+                                <a href="tel:+49308928217" class="text-accent text-2xl font-serif hover:underline">030 / 892 82 17</a>
+                                <p class="text-gray-500 text-sm mt-1">Mon - Fri: 08:00 - 16:00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-6">
+                            <div class="text-accent mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Email Inquiry</h4>
+                                <a href="mailto:info@augar.de" class="text-primary hover:text-accent transition">info@augar.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 min-h-[400px] bg-gray-200 relative grayscale hover:grayscale-0 transition duration-700">
+                    <!-- Minimalist Vector Style Map Placeholder -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.847551062!2d13.2929111!3d52.4990664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850e0e0e0e0e0%3A0x0!2zSm9oYW5uLVNpZ2lzbXVuZC1TdHJhw59lIDE0LCAxMDcxMSBCZXJsaW4!5e0!3m2!1sde!2sde!4v1700000000000" 
+                        class="absolute inset-0 w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex flex-col">
+                    <span class="font-serif text-xl tracking-tighter">AUGAR GmbH</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-widest">Master Plumbers since 1885</span>
+                </div>
+                <div class="text-xs text-gray-400 text-center">
+                    &copy; 1885 - 2026 Augar Gas- und Wasserinstallationen GmbH. All rights reserved.
+                </div>
+                <div class="flex space-x-6 text-xs uppercase tracking-widest font-bold">
+                    <a href="#" class="hover:text-accent">Impressum</a>
+                    <a href="#" class="hover:text-accent">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
