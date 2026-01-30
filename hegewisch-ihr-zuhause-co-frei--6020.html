@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hegewisch | Ihr Zuhause, CO₂-frei bis 2026 – Wärmepumpen & PV Spezialisten Berlin</title>
+    <meta name="description" content="Hegewisch aus Berlin: High-End Wärmepumpen, PV-Anlagen und Smart Energy. 30 Jahre Meisterbetrieb, Festpreisgarantie und 4.9 Sterne Bewertung.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        trustBlue: '#002F6C',
+                        vibrantRed: '#E30613',
+                        iceWhite: '#F8F9FA',
+                        ecoGreen: '#2ECC71',
+                    },
+                    fontFamily: {
+                        headline: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Animation Logic -->
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeInUp 0.8s ease-out forwards; }
+        .bento-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .bento-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-iceWhite font-body text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-trustBlue font-headline text-2xl font-extrabold tracking-tighter">HEGEWISCH</span>
+                    <span class="ml-2 text-vibrantRed font-bold text-xs uppercase tracking-widest hidden sm:block">Meisterbetrieb<br>Berlin</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#services" class="text-sm font-semibold hover:text-vibrantRed transition">Systeme</a>
+                    <a href="#process" class="text-sm font-semibold hover:text-vibrantRed transition">Festpreis</a>
+                    <a href="#roi" class="text-sm font-semibold hover:text-vibrantRed transition">Förderung</a>
+                    <a href="#faq" class="text-sm font-semibold hover:text-vibrantRed transition">FAQ</a>
+                    <a href="tel:03091611242" class="text-sm font-bold text-trustBlue">030 • 916 11 242</a>
+                    <a href="#angebotsrechner" class="bg-vibrantRed text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-opacity-90 transition shadow-lg shadow-red-200">
+                        Termin vereinbaren
+                    </a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-trustBlue p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-trustBlue">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 text-white px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+                        <span class="flex h-2 w-2 rounded-full bg-ecoGreen animate-pulse"></span>
+                        <span>Berlins Spezialisten für die Energiewende</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-headline font-extrabold text-white leading-tight mb-6">
+                        Ihr Zuhause,<br><span class="text-ecoGreen">CO₂-frei bis 2026.</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 max-w-lg">
+                        Wir sind Ihre Energie-Architekten für Wärmepumpen, PV-Anlagen und Smart Energy Integration. In Berlin & Brandenburg. <strong>Festpreis. Garantiert effizient.</strong>
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#angebotsrechner" class="bg-vibrantRed text-white px-8 py-4 rounded-xl font-bold text-lg text-center hover:scale-105 transition shadow-xl shadow-red-900/20">
+                            Angebotsrechner starten
+                        </a>
+                        <a href="tel:03091611242" class="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-white/20 transition">
+                            Kostenlose Beratung
+                        </a>
+                    </div>
+                    <div class="mt-12 flex items-center space-x-6 grayscale opacity-70">
+                        <img src="img/sys/vaillant-kompetenzpartner-light.png" alt="Vaillant" class="h-8">
+                        <img src="img/sys/viessmann-systemprofi.svg" alt="Viessmann" class="h-8">
+                        <img src="img/sys/shk-innung-berlin.gif" alt="Innung" class="h-8 bg-white p-1 rounded">
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <div class="absolute -inset-4 bg-ecoGreen/20 blur-3xl rounded-full"></div>
+                    <img src="img/assets/installation.webp" alt="Wärmepumpen Installation Hegewisch" class="relative rounded-3xl shadow-2xl border border-white/10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="bg-white py-8 border-b border-slate-100 shadow-sm relative z-20 -mt-10 max-w-5xl mx-auto rounded-2xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-8 text-center divide-x divide-slate-100">
+            <div>
+                <p class="text-3xl font-headline font-extrabold text-trustBlue">4.9/5</p>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Google Rating</p>
+            </div>
+            <div>
+                <p class="text-3xl font-headline font-extrabold text-trustBlue">30+</p>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Jahre Expertise</p>
+            </div>
+            <div>
+                <p class="text-3xl font-headline font-extrabold text-trustBlue">100%</p>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Festpreis-Garantie</p>
+            </div>
+            <div>
+                <p class="text-3xl font-headline font-extrabold text-trustBlue">Berlin</p>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">& Brandenburg</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Integrated Ecosystem (Bento Services) -->
+    <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-trustBlue mb-4">Das integrierte Energie-Ökosystem</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto text-lg">Vom Heizungsbauer zum Energie-Architekten. Wir planen Ihre Unabhängigkeit ganzheitlich.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-full">
+            <!-- Heat Pumps -->
+            <div class="md:col-span-8 bento-card bg-white p-8 rounded-3xl border border-slate-100 flex flex-col justify-between overflow-hidden relative">
+                <div class="relative z-10">
+                    <span class="text-ecoGreen font-bold text-sm tracking-widest uppercase">Kernelement</span>
+                    <h3 class="text-3xl font-headline font-bold mt-2 mb-4">Wärmepumpen</h3>
+                    <p class="text-slate-600 max-w-md mb-6">Luft-Wasser & Geothermal. Wir machen Altbau und Neubau fit für die Zukunft – mit bis zu 5 Jahren Garantie.</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center text-sm font-medium"><span class="w-1.5 h-1.5 bg-ecoGreen rounded-full mr-2"></span> Vaillant aroTHERM Experten</li>
+                        <li class="flex items-center text-sm font-medium"><span class="w-1.5 h-1.5 bg-ecoGreen rounded-full mr-2"></span> Viessmann System-Profis</li>
+                    </ul>
+                </div>
+                <img src="img/slideshow-home/pic0.webp" class="absolute right-0 bottom-0 w-1/2 opacity-20 md:opacity-100 translate-x-10 translate-y-10" alt="WP">
+            </div>
+
+            <!-- PV -->
+            <div class="md:col-span-4 bento-card bg-trustBlue p-8 rounded-3xl text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-headline font-bold mb-4">Photovoltaik & Speicher</h3>
+                    <p class="text-slate-300 text-sm">Eigener Strom für Ihre Wärmepumpe. Senken Sie Ihre Betriebskosten um bis zu 80%.</p>
+                </div>
+                <div class="mt-8">
+                    <div class="h-1 bg-white/20 w-full rounded-full">
+                        <div class="h-1 bg-ecoGreen w-3/4 rounded-full"></div>
+                    </div>
+                    <p class="text-xs mt-2 text-slate-400">Maximale Autarkie erreichen</p>
+                </div>
+            </div>
+
+            <!-- Wallbox -->
+            <div class="md:col-span-4 bento-card bg-white p-8 rounded-3xl border border-slate-100">
+                <div class="w-12 h-12 bg-vibrantRed/10 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-vibrantRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-headline font-bold mb-2">EV-Wallbox</h3>
+                <p class="text-slate-500 text-sm">Smarte Ladestationen direkt an Ihr Energiesystem gekoppelt.</p>
+            </div>
+
+            <!-- Smart Control -->
+            <div class="md:col-span-8 bento-card bg-slate-900 p-8 rounded-3xl text-white flex items-center justify-between">
+                <div class="max-w-md">
+                    <h3 class="text-xl font-headline font-bold mb-2">Smart Heating Control</h3>
+                    <p class="text-slate-400 text-sm">KI-gesteuerte Optimierung Ihrer Heizkurve für maximale Effizienz und minimalen Verschleiß.</p>
+                </div>
+                <div class="hidden sm:block">
+                    <div class="flex space-x-2">
+                        <div class="w-8 h-12 bg-ecoGreen rounded-lg animate-bounce" style="animation-delay: 0.1s"></div>
+                        <div class="w-8 h-20 bg-ecoGreen rounded-lg animate-bounce" style="animation-delay: 0.3s"></div>
+                        <div class="w-8 h-16 bg-ecoGreen rounded-lg animate-bounce" style="animation-delay: 0.2s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Price Process -->
+    <section id="process" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-trustBlue mb-4">Transparenz als Standard</h2>
+                    <p class="text-slate-500 text-lg">Keine versteckten Kosten. Keine bösen Überraschungen.</p>
+                </div>
+                <div class="bg-iceWhite p-4 rounded-2xl border-l-4 border-vibrantRed">
+                    <span class="block text-vibrantRed font-bold">Festpreis-Garantie</span>
+                    <span class="text-xs text-slate-500 uppercase tracking-tighter">Seit über 30 Jahren</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 relative">
+                <div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-slate-100 z-0"></div>
+                
+                <!-- Phase 1 -->
+                <div class="relative z-10">
+                    <div class="w-20 h-20 bg-trustBlue text-white rounded-full flex items-center justify-center font-headline text-3xl font-bold mb-8 shadow-xl">1</div>
+                    <h3 class="text-xl font-bold mb-4">Präzisions-Planung</h3>
+                    <p class="text-slate-500">Persönlicher Vor-Ort-Termin zur technischen Bestandsaufnahme. Wir planen Ihr System individuell auf Ihre Immobilie zugeschnitten.</p>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="relative z-10">
+                    <div class="w-20 h-20 bg-trustBlue text-white rounded-full flex items-center justify-center font-headline text-3xl font-bold mb-8 shadow-xl">2</div>
+                    <h3 class="text-xl font-bold mb-4">Swift Installation</h3>
+                    <p class="text-slate-500">Ein Heizungswechsel erfolgt bei uns innerhalb weniger Tage. Sauber, professionell und zum garantierten Festpreis.</p>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="relative z-10">
+                    <div class="w-20 h-20 bg-trustBlue text-white rounded-full flex items-center justify-center font-headline text-3xl font-bold mb-8 shadow-xl">3</div>
+                    <h3 class="text-xl font-bold mb-4">Lifecycle Service</h3>
+                    <p class="text-slate-500">Wartung, Fernüberwachung und 24h-Notdienst für unsere Vertragskunden. Wir bleiben Ihr Partner für die gesamte Laufzeit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI & Subsidy Engine -->
+    <section id="roi" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-trustBlue rounded-[3rem] p-8 md:p-16 text-white overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-1/3 h-full bg-ecoGreen/10 skew-x-12"></div>
+                
+                <div class="grid lg:grid-cols-2 gap-16 relative z-10">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-8 leading-tight">Ihre Investition,<br>die sich sofort rechnet.</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-ecoGreen p-2 rounded-lg mt-1">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold">Bis zu 70% Förderung</p>
+                                    <p class="text-slate-300">Staatliche Zuschüsse bis zu 21.000 € über die KfW möglich.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-ecoGreen p-2 rounded-lg mt-1">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold">41% Kostenersparnis</p>
+                                    <p class="text-slate-300">Reduzieren Sie Ihre jährlichen Heizkosten im Vergleich zu Gas massiv.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="mt-12 bg-white text-trustBlue px-8 py-4 rounded-xl font-bold hover:bg-ecoGreen hover:text-white transition">Jetzt Fördercheck anfordern</button>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <h3 class="text-xl font-bold mb-6">Vergleich: Heizkosten p.a.</h3>
+                        <div class="space-y-8">
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span>Alte Gasheizung</span>
+                                    <span class="font-bold">2.400 €</span>
+                                </div>
+                                <div class="h-4 bg-white/10 rounded-full overflow-hidden">
+                                    <div class="h-full bg-vibrantRed w-full"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span>Hegewisch Wärmepumpe</span>
+                                    <span class="text-ecoGreen font-bold">1.416 €</span>
+                                </div>
+                                <div class="h-4 bg-white/10 rounded-full overflow-hidden">
+                                    <div class="h-full bg-ecoGreen w-[59%]"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-400 italic text-center">Basierend auf einem Standard-Einfamilienhaus in Berlin/Brandenburg.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator -->
+    <section id="angebotsrechner" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-trustBlue mb-6">Individuelles Angebot in 2 Minuten</h2>
+            <p class="text-slate-500 text-lg">Nutzen Sie unseren interaktiven Rechner für eine erste Kostenschätzung Ihres neuen Systems.</p>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-iceWhite rounded-3xl border border-slate-200 p-4 md:p-12 shadow-inner">
+                <!-- LL-HZR3 Widget Placeholder -->
+                <div id="meister1_LL-HZR3_VI_2425_4691" class="min-h-[500px] flex items-center justify-center bg-white rounded-2xl border border-dashed border-slate-300">
+                    <div class="text-center p-8">
+                        <div class="w-16 h-16 border-4 border-trustBlue border-t-vibrantRed rounded-full animate-spin mx-auto mb-4"></div>
+                        <p class="text-slate-400 font-medium">Der Angebotsrechner wird geladen...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise & Persona -->
+    <section class="py-24 bg-trustBlue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-8 leading-tight">Tradition trifft auf<br>High-End Engineering.</h2>
+                    <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                        Hegewisch ist kein anonymes Energie-Startup. Wir sind ein <strong>Meisterbetrieb mit 30-jähriger Geschichte</strong>. Unter der Leitung von Heiko Hegewisch vereint unser 30-köpfiges Team klassisches Handwerk mit den modernsten Technologien von Vaillant und Viessmann.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-4xl font-headline font-extrabold text-ecoGreen">30+</p>
+                            <p class="text-sm text-slate-400">Jahre Meistererfahrung</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-headline font-extrabold text-ecoGreen">30</p>
+                            <p class="text-sm text-slate-400">Fachkräfte im Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-vibrantRed to-trustBlue rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        <div class="relative aspect-video bg-slate-800 rounded-2xl overflow-hidden flex items-center justify-center">
+                             <!-- Representational image of Heiko or Team -->
+                             <img src="img/assets/planung.webp" alt="Heiko Hegewisch Team" class="w-full h-full object-cover opacity-80">
+                             <div class="absolute bottom-6 left-6 bg-trustBlue/90 backdrop-blur p-4 rounded-xl border border-white/10">
+                                <p class="text-sm font-bold uppercase tracking-widest text-ecoGreen">Meisterqualität</p>
+                                <p class="text-lg font-bold">Heiko Hegewisch</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-24 bg-iceWhite overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 mb-12">
+            <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-trustBlue text-center">Echte Stimmen aus Berlin</h2>
+        </div>
+        
+        <!-- Horizontal Scroll Container -->
+        <div class="flex space-x-6 overflow-x-auto pb-12 px-8 no-scrollbar scroll-smooth">
+            <!-- Review 1 -->
+            <div class="flex-shrink-0 w-80 md:w-96 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="flex text-vibrantRed mb-4">★★★★★</div>
+                <p class="text-slate-600 italic mb-6">"Dass ihr so kurzfristig den defekten Wasserspeicher ausgetauscht habt, war wirklich eine große Hilfe. Vielen Dank für eure Professionalität!"</p>
+                <p class="font-bold text-trustBlue">Anja Techam</p>
+                <p class="text-xs text-slate-400">via Google Reviews</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="flex-shrink-0 w-80 md:w-96 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="flex text-vibrantRed mb-4">★★★★★</div>
+                <p class="text-slate-600 italic mb-6">"Abbau der alten und Einbau der neuen WP hat prima geklappt. Mitarbeiter sehr höflich und hinterlassen die Baustelle sauber."</p>
+                <p class="font-bold text-trustBlue">Frank aus B</p>
+                <p class="text-xs text-slate-400">via Google Reviews</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="flex-shrink-0 w-80 md:w-96 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="flex text-vibrantRed mb-4">★★★★★</div>
+                <p class="text-slate-600 italic mb-6">"Wartung unserer Vaillant-WP wurde ohne Zusatzkosten miterledigt. Die Website machte einen sehr guten Eindruck."</p>
+                <p class="font-bold text-trustBlue">Sebastian Kortemeyer</p>
+                <p class="text-xs text-slate-400">via Google Reviews</p>
+            </div>
+            <!-- Review 4 -->
+            <div class="flex-shrink-0 w-80 md:w-96 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="flex text-vibrantRed mb-4">★★★★★</div>
+                <p class="text-slate-600 italic mb-6">"Sehr zu empfehlen. Von der Beratung bis zur Durchführung hat alles sehr gut und zügig geklappt. Nettes Team!"</p>
+                <p class="font-bold text-trustBlue">U Plaschi</p>
+                <p class="text-xs text-slate-400">via Google Reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-trustBlue mb-12 text-center">Hürden zur Wärme</h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-iceWhite rounded-2xl p-6 border border-slate-100">
+                    <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-lg text-trustBlue">
+                        Wärmepumpe im Altbau?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 leading-relaxed">
+                        Meistens auch in Altbauten sinnvoll. Voraussetzung: Ausreichende Dämmung und große Heizflächen. Ideal ist ein Energiebedarf unter 150 kWh/m². Wir prüfen das individuell bei Ihnen vor Ort.
+                    </div>
+                </details>
+
+                <details class="group bg-iceWhite rounded-2xl p-6 border border-slate-100">
+                    <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-lg text-trustBlue">
+                        Wie laut ist das Außengerät?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 leading-relaxed">
+                        Die aroTHERM plus von Vaillant ist z.B. nur 46 dB(A) laut. Nach 3 Metern Entfernung sind das nur noch ca. 45 dB(A) – vergleichbar mit einem leisen Ventilator.
+                    </div>
+                </details>
+
+                <details class="group bg-iceWhite rounded-2xl p-6 border border-slate-100">
+                    <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-lg text-trustBlue">
+                        Garantie & Wartung?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 leading-relaxed">
+                        Wir gewähren 5 Jahre Garantie auf Vaillant und Viessmann Systeme bei regelmäßiger Wartung. Unser Wartungsvertrag sichert Ihnen zudem den 24h-Notdienst.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Conversion / Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Info -->
+                <div class="col-span-1 lg:col-span-1">
+                    <span class="text-white font-headline text-2xl font-extrabold tracking-tighter">HEGEWISCH</span>
+                    <p class="mt-6 text-slate-400 text-sm leading-relaxed">
+                        Meisterbetrieb für Heizung, Sanitär, Solar & Klima. Ihr Partner für die Wärmewende in der Hauptstadtregion.
+                    </p>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="tel:03091611242" class="bg-vibrantRed p-3 rounded-lg hover:scale-110 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.7.59 1 1 0 011 1V19a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.41a1 1 0 011 1 11.72 11.72 0 00.59 3.7 1 1 0 01-.27 1.11l-2.11 2.08z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Locations -->
+                <div>
+                    <h4 class="font-bold mb-6 text-ecoGreen uppercase tracking-widest text-xs">Standorte</h4>
+                    <address class="not-italic text-sm text-slate-400 space-y-4">
+                        <div>
+                            <span class="block text-white font-bold">Berlin (Hauptsitz)</span>
+                            Lübarser Straße 13, 13435 Berlin
+                        </div>
+                        <div>
+                            <span class="block text-white font-bold">Zweigstelle Velten</span>
+                            Karlstraße 37, 16727 Velten
+                        </div>
+                    </address>
+                </div>
+
+                <!-- Notdienst -->
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <h4 class="font-bold mb-4 text-vibrantRed uppercase tracking-widest text-xs">Notdienst</h4>
+                    <p class="text-2xl font-headline font-bold mb-2">030 • 916 11 242</p>
+                    <p class="text-xs text-slate-400 italic">24h Hotline von Oktober bis Ostern – exklusiv für Vertragskunden.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-6 text-ecoGreen uppercase tracking-widest text-xs">Navigation</h4>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Beratung</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fördermittel</a></li>
+                        <li><a href="#" class="hover:text-white transition">Über uns</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karriere</a></li>
+                        <li><a href="#" class="hover:text-white transition">Impressum</a></li>
+                        <li><a href="#" class="hover:text-white transition">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>© 2026 Hegewisch Heizung Sanitär Klima. Alle Rechte vorbehalten.</p>
+                <p class="mt-4 md:mt-0 flex items-center">Made with <span class="text-vibrantRed mx-1">❤</span> in Berlin</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-trustBlue z-[60] hidden flex flex-col items-center justify-center space-y-8 text-white text-2xl font-headline font-bold">
+        <button id="close-menu" class="absolute top-8 right-8 text-white">✕</button>
+        <a href="#services" class="mobile-link">Systeme</a>
+        <a href="#process" class="mobile-link">Festpreis</a>
+        <a href="#roi" class="mobile-link">Förderung</a>
+        <a href="#angebotsrechner" class="bg-vibrantRed px-8 py-4 rounded-xl">Angebotsrechner</a>
+    </div>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        links.forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        // ROI Counter Animation (Simplified Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
