@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minter – Sanitär und Heizung e.K | Meisterbetrieb Berlin-Neukölln</title>
+    <meta name="description" content="Ihr Experte für Heizungstechnik, Badmodernisierung und regenerative Energien in Berlin. Mitglied der SHK-Innung.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A365D',
+                        secondary: '#2B6CB0',
+                        accent: '#ED8936',
+                        neutralBg: '#F7FAFC',
+                        textMain: '#2D3748',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'custom': '8px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        body { font-family: 'Inter', sans-serif; color: #2D3748; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.6)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover .service-icon { transform: scale(1.1); color: #ED8936; }
+    </style>
+</head>
+<body class="bg-neutralBg">
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-primary p-2 rounded-custom">
+                    <i data-lucide="droplets" class="text-white w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold text-primary leading-none">MINTER</span>
+                    <span class="text-xs font-medium text-secondary tracking-widest uppercase">Sanitär & Heizung</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-medium text-primary">
+                <a href="#home" class="hover:text-accent transition-colors">Home</a>
+                <a href="#services" class="hover:text-accent transition-colors">Leistungen</a>
+                <a href="#about" class="hover:text-accent transition-colors">Über uns</a>
+                <a href="#contact" class="hover:text-accent transition-colors">Kontakt</a>
+            </nav>
+
+            <a href="tel:0306221044" class="bg-accent hover:bg-orange-600 text-white px-5 py-2.5 rounded-custom font-bold flex items-center transition-all transform hover:scale-105 shadow-lg">
+                <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                030 / 622 10 44
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-[80vh] flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-accent text-white px-4 py-1 rounded-full text-sm font-bold mb-6 uppercase tracking-wider">Meisterbetrieb seit Generationen</span>
+                <h1 class="text-4xl md:text-6xl text-white font-bold mb-6 leading-tight">
+                    Meisterhafte Heizungs- & Sanitättechnik für Berlin
+                </h1>
+                <p class="text-xl text-blue-50 mb-10 leading-relaxed">
+                    Von regenerativen Energien bis zur Badmodernisierung – wir setzen Ihre Wünsche mit Berliner Präzision und fachgerechter Handwerkskunst um.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-accent hover:bg-orange-600 text-white text-center px-8 py-4 rounded-custom font-bold text-lg transition-all">
+                        Jetzt beraten lassen
+                    </a>
+                    <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-center px-8 py-4 rounded-custom font-bold text-lg transition-all">
+                        Unsere Leistungen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white border-b">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80">
+                <div class="flex items-center space-x-3">
+                    <i data-lucide="award" class="text-primary w-8 h-8"></i>
+                    <span class="font-bold text-primary uppercase text-sm tracking-tighter">Mitglied der <br>SHK-Innung Berlin</span>
+                </div>
+                <div class="flex items-center space-x-3 border-l pl-8 hidden sm:flex">
+                    <i data-lucide="shield-check" class="text-primary w-8 h-8"></i>
+                    <span class="font-bold text-primary uppercase text-sm tracking-tighter">Zertifizierter <br>Fachbetrieb</span>
+                </div>
+                <div class="flex items-center space-x-3 border-l pl-8 hidden md:flex">
+                    <i data-lucide="clock" class="text-primary w-8 h-8"></i>
+                    <span class="font-bold text-primary uppercase text-sm tracking-tighter">Langjährige <br>Erfahrung</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Service Grid -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Unsere Leistungen</h2>
+                <p class="text-textMain text-lg">Professionelle Lösungen für Ihr Zuhause. Wir kombinieren moderne Technik mit bewährter Tradition.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all border-b-4 border-transparent hover:border-accent group">
+                    <i data-lucide="droplet" class="service-icon w-12 h-12 text-secondary mb-6 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-primary mb-3">Wasser-Technik</h3>
+                    <p class="text-textMain mb-6">Trinkwasserinstallationen, Abwasserlösungen und modernste Filtertechnik für höchste Wasserqualität.</p>
+                    <a href="#contact" class="text-secondary font-bold inline-flex items-center group-hover:text-accent transition-colors">
+                        Mehr erfahren <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all border-b-4 border-transparent hover:border-accent group">
+                    <i data-lucide="flame" class="service-icon w-12 h-12 text-secondary mb-6 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-primary mb-3">Heizungstechnik</h3>
+                    <p class="text-textMain mb-6">Effiziente Heizsysteme, Gasthermen-Wartung und nachhaltige Lösungen für wohlige Wärme.</p>
+                    <a href="#contact" class="text-secondary font-bold inline-flex items-center group-hover:text-accent transition-colors">
+                        Mehr erfahren <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all border-b-4 border-transparent hover:border-accent group">
+                    <i data-lucide="bath" class="service-icon w-12 h-12 text-secondary mb-6 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-primary mb-3">Badmodernisierung</h3>
+                    <p class="text-textMain mb-6">Wir planen und realisieren Ihr individuelles Traumbad – von der Armatur bis zur Komplettsanierung.</p>
+                    <a href="#contact" class="text-secondary font-bold inline-flex items-center group-hover:text-accent transition-colors">
+                        Mehr erfahren <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card bg-white p-8 rounded-custom shadow-sm hover:shadow-xl transition-all border-b-4 border-transparent hover:border-accent group">
+                    <i data-lucide="wind" class="service-icon w-12 h-12 text-secondary mb-6 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-primary mb-3">Klimatechnik</h3>
+                    <p class="text-textMain mb-6">Moderne Klimatisierung und Lüftungskonzepte für ein perfektes Raumklima zu jeder Jahreszeit.</p>
+                    <a href="#contact" class="text-secondary font-bold inline-flex items-center group-hover:text-accent transition-colors">
+                        Mehr erfahren <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience (About) -->
+    <section id="about" class="py-20 bg-primary text-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-custom overflow-hidden shadow-2xl border-8 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" alt="Handwerker bei der Arbeit" class="w-full">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-accent p-8 rounded-custom hidden md:block">
+                        <p class="text-4xl font-bold">25+</p>
+                        <p class="text-sm uppercase font-bold">Jahre Erfahrung</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 italic">"Unsere Lösungen sind so individuell wie Ihre Wünsche!"</h2>
+                    <p class="text-blue-100 text-lg mb-6 leading-relaxed">
+                        Als inhabergeführter Meisterbetrieb unter der Leitung von <strong>Herrn Koese</strong> legen wir größten Wert auf die persönliche Beratung. Wir wissen, dass jedes Gebäude und jeder Eigentümer in Berlin-Neukölln eigene Anforderungen hat.
+                    </p>
+                    <p class="text-blue-100 text-lg mb-8 leading-relaxed">
+                        Dabei greifen wir auf langjährige Erfahrung und umfangreiches Praxiswissen zurück. Als stolzes Mitglied der SHK-Innung Berlin sind wir stets bemüht, unsere Arbeiten nach den neuesten Bestimmungen und Qualitätsrichtlinien durchzuführen.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center"><i data-lucide="check-circle-2" class="text-accent mr-3"></i> Individuelle Beratung vor Ort</li>
+                        <li class="flex items-center"><i data-lucide="check-circle-2" class="text-accent mr-3"></i> Transparente Kostenplanung</li>
+                        <li class="flex items-center"><i data-lucide="check-circle-2" class="text-accent mr-3"></i> Termingerechte Ausführung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance & Emergency -->
+    <section class="py-12 bg-accent">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Sie benötigen eine Wartung oder schnelle Hilfe?</h2>
+            <p class="text-xl mb-8 opacity-90">Wir überprüfen Ihre Anlagen und sichern die Langlebigkeit Ihrer Haustechnik.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="tel:0306221044" class="bg-primary hover:bg-slate-900 text-white px-10 py-4 rounded-custom font-bold text-xl flex items-center shadow-xl transition-all">
+                    <i data-lucide="phone-forwarded" class="w-6 h-6 mr-3"></i>
+                    Jetzt anrufen: 030 / 622 10 44
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-custom shadow-xl overflow-hidden">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Left: Info -->
+                    <div class="lg:w-1/2 p-10 md:p-16">
+                        <h2 class="text-3xl font-bold text-primary mb-8">Kontaktieren Sie uns</h2>
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="bg-blue-50 p-3 rounded-lg mr-4">
+                                    <i data-lucide="map-pin" class="text-secondary w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">Büro Adresse</h4>
+                                    <p class="text-textMain">Jonasstr. 39<br>12053 Berlin-Neukölln</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-50 p-3 rounded-lg mr-4">
+                                    <i data-lucide="mail" class="text-secondary w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">E-Mail</h4>
+                                    <p class="text-textMain">koese@minter-koese.de</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-50 p-3 rounded-lg mr-4">
+                                    <i data-lucide="phone-call" class="text-secondary w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">Telefon & Fax</h4>
+                                    <p class="text-textMain">Tel: 030 / 622 10 44<br>Fax: 030 / 621 50 69</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12 p-6 bg-neutralBg rounded-custom border-l-4 border-secondary">
+                            <p class="text-sm font-medium italic">"Service ist alles! Wir freuen uns darauf, Ihr Projekt gemeinsam zu planen."</p>
+                            <p class="text-sm font-bold text-primary mt-2">— Ihr Team von Minter-Koese</p>
+                        </div>
+                    </div>
+                    <!-- Right: Map -->
+                    <div class="lg:w-1/2 h-[400px] lg:h-auto bg-slate-200">
+                        <!-- Simulated Interactive Map -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.673894767223!2d13.4315266!3d52.4668582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84f0bc1c78493%3A0xc47b0a389f41788c!2sJonasstra%C3%9Fe%2039%2C%2012053%20Berlin!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i data-lucide="droplets" class="text-accent w-6 h-6"></i>
+                        <span class="text-xl font-bold">MINTER</span>
+                    </div>
+                    <p class="text-blue-200 text-sm leading-relaxed">
+                        Minter – Sanitär und Heizung e.K.<br>
+                        Ihr kompetenter Partner für moderne Haustechnik in Berlin. Meisterqualität seit vielen Jahren.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Schnellzugriff</h4>
+                    <ul class="space-y-3 text-blue-100 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Unsere Leistungen</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Über uns</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Kontakt & Anfahrt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Rechtliches</h4>
+                    <ul class="space-y-3 text-blue-100 text-sm">
+                        <li><a href="impressum.html" class="hover:text-white transition-colors">Impressum</a></li>
+                        <li><a href="datenschutzerklaerung.html" class="hover:text-white transition-colors">Datenschutzerklärung</a></li>
+                        <li class="flex space-x-4 mt-6">
+                            <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                            <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-blue-300 text-xs">
+                <p>&copy; 2026 Minter - Sanitär und Heizung e.K. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icon Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
